@@ -1,0 +1,140 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 4.5em;
+  line-height: 1.1;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2em;
+}
+
+button, li {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+button:hover, li:hover {
+  border-color: #646cff;
+}
+
+button:focus,
+button:focus-visible,
+li:focus,
+li:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+
+/* SELECTOR LIST */
+.selector-list-breeds, .selector-list-categories, .selector-list-extension {
+  list-style: none;
+  padding: 0;
+  margin-top: 2em;
+}
+
+.selector-list-breeds {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  column-gap: 1.2em;
+  row-gap: 0.5em;
+}
+
+.selector-list-categories {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 1.2em;
+  row-gap: 0.5em;
+}
+
+.selector-list-extension {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2em;
+}
+
+
+/* CONTAINER CATS */
+.container-cats {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+/* MODAL */
+.modal {
+  position: fixed; /* fija en pantalla */
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.modal-overlay {
+  position: fixed; /* cubre toda la pantalla */
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5); /* opacidad 0.5 */
+  backdrop-filter: blur(2px); /* opcional */
+  z-index: 1;
+}
+
+.modal-content {
+  position: relative; /* por encima del overlay */
+  background: #242424;
+  padding: 30px;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 500px;
+  z-index: 2;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+  animation: pop 0.2s ease-out;
+}
+
+.modal-content-btns {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
