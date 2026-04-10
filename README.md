@@ -1,16 +1,76 @@
-# React + Vite
+# 🐱 CatGallery - The Cat API (React + Vite)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📖 Descripción
 
-Currently, two official plugins are available:
+CatGallery es una aplicación web desarrollada con **React + Vite** que consume la API pública de gatos **The Cat API** para mostrar una galería dinámica de imágenes.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+El proyecto permite explorar gatos, aplicar filtros, gestionar favoritos y mejorar la experiencia del usuario mediante una interfaz moderna y reactiva.
 
-## React Compiler
+🔗 API: https://thecatapi.com/
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🎯 Objetivo del proyecto
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Practicar desarrollo frontend con **React**
+- Consumir una **API REST real**
+- Gestionar estado con hooks (`useState`, `useEffect`)
+- Implementar persistencia con `localStorage`
+- Crear una interfaz dinámica y modular
+- Mejorar habilidades de arquitectura frontend
+
+---
+
+## 🧠 Funcionalidades principales
+
+### 🏠 Galería
+- Visualización de imágenes obtenidas desde la API
+- Renderizado mediante componentes reutilizables
+- Carga dinámica de contenido
+
+### ⭐ Favoritos
+- Guardado de imágenes en `localStorage`
+- Añadir / eliminar favoritos
+- Persistencia de datos entre sesiones
+
+### 📄 Carga de imágenes
+- Carga progresiva de imágenes
+- Sistema de "Load more" o scroll infinito
+
+### 🔍 Filtros
+- Filtrado por raza, categoría y tipo de imagen
+- Manejo de filtros con estado en React
+
+### ℹ️ Modal de información
+- Detalles de razas (temperamento, origen, descripción)
+- Visualización en componente modal
+
+---
+
+## 🛠️ Tecnologías utilizadas
+
+- ⚛️ React
+- ⚡ Vite
+- 🟨 JavaScript (ES6+)
+- 🎨 CSS3
+- 🌐 Fetch API
+- 💾 LocalStorage
+
+---
+
+## 🔁 Arquitectura del proyecto
+
+- Componentes reutilizables
+- Separación de lógica y UI
+- Gestión de estado con hooks
+- Comunicación entre componentes mediante props
+
+---
+
+## 🚀 Instalación y ejecución
+
+```bash
+git clone https://github.com/TU_USUARIO/TU_REPO.git
+cd TU_REPO
+npm install
+npm run dev
