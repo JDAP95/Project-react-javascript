@@ -1,76 +1,75 @@
-# 🐱 CatGallery - The Cat API (React + Vite)
+# 🐱 CatGallery - React + The Cat API
 
-## 📖 Descripción
+## 🚀 Proyecto Frontend (React + Vite)
 
-CatGallery es una aplicación web desarrollada con **React + Vite** que consume la API pública de gatos **The Cat API** para mostrar una galería dinámica de imágenes.
+Aplicación web desarrollada con **React + Vite** que consume datos reales desde una API pública para construir una experiencia interactiva de exploración de imágenes de gatos.
 
-El proyecto permite explorar gatos, aplicar filtros, gestionar favoritos y mejorar la experiencia del usuario mediante una interfaz moderna y reactiva.
-
-🔗 API: https://thecatapi.com/
+Este proyecto simula una arquitectura frontend moderna basada en la Clean Architecture utilizada en entornos profesionales.
 
 ---
 
-## 🎯 Objetivo del proyecto
+## 🎯 Contexto del proyecto
 
-- Practicar desarrollo frontend con **React**
-- Consumir una **API REST real**
-- Gestionar estado con hooks (`useState`, `useEffect`)
-- Implementar persistencia con `localStorage`
-- Crear una interfaz dinámica y modular
-- Mejorar habilidades de arquitectura frontend
+Este proyecto tiene como objetivo simular un caso real de desarrollo frontend:
 
----
-
-## 🧠 Funcionalidades principales
-
-### 🏠 Galería
-- Visualización de imágenes obtenidas desde la API
-- Renderizado mediante componentes reutilizables
-- Carga dinámica de contenido
-
-### ⭐ Favoritos
-- Guardado de imágenes en `localStorage`
-- Añadir / eliminar favoritos
-- Persistencia de datos entre sesiones
-
-### 📄 Carga de imágenes
-- Carga progresiva de imágenes
-- Sistema de "Load more" o scroll infinito
-
-### 🔍 Filtros
-- Filtrado por raza, categoría y tipo de imagen
-- Manejo de filtros con estado en React
-
-### ℹ️ Modal de información
-- Detalles de razas (temperamento, origen, descripción)
-- Visualización en componente modal
+- Consumo de una API externa
+- Gestión de estado compleja en frontend
+- Persistencia de datos del usuario
+- Componentización y escalabilidad
+- Experiencia de usuario dinámica
 
 ---
 
-## 🛠️ Tecnologías utilizadas
+## ⚙️ Stack técnico
 
-- ⚛️ React
+- ⚛️ React (Functional Components)
 - ⚡ Vite
-- 🟨 JavaScript (ES6+)
-- 🎨 CSS3
+- 🟨 JavaScript ES6+
 - 🌐 Fetch API
 - 💾 LocalStorage
+- 🎨 CSS moderno
 
 ---
 
-## 🔁 Arquitectura del proyecto
+## 🧠 Responsabilidades técnicas implementadas
 
+### 🔗 Integración con API
+- Consumo de datos desde The Cat API
+- Manejo de asincronía con `async/await`
+- Gestión de estados de carga y error
+
+### 🧩 Arquitectura React
 - Componentes reutilizables
-- Separación de lógica y UI
-- Gestión de estado con hooks
-- Comunicación entre componentes mediante props
+- Separación clara de responsabilidades
+- Flujo de datos mediante props
+- Uso de hooks (`useState`, `useEffect`)
+
+### ⭐ Sistema de favoritos
+- Persistencia de datos con `localStorage`
+- Sincronización entre UI y almacenamiento local
+- Gestión de estado global de favoritos
+
+### 🔍 Sistema de filtrado
+- Filtros dinámicos por categoría y raza
+- Actualización reactiva de la UI
+
+### 📄 Carga progresiva
+- Implementación de carga incremental de imágenes
+- Optimización de renderizado
 
 ---
 
-## 🚀 Instalación y ejecución
+## 🧱 Arquitectura
 
-```bash
-git clone https://github.com/TU_USUARIO/TU_REPO.git
-cd TU_REPO
-npm install
-npm run dev
+El proyecto sigue una arquitectura basada en componentes:
+
+- UI dividida en componentes reutilizables
+- Lógica desacoplada de la presentación
+- Estado controlado a nivel de componente
+- Flujo unidireccional de datos
+
+---
+
+## 🌍 Demo en producción
+
+👉 https://jdap95.github.io/Project-react-javascript/
